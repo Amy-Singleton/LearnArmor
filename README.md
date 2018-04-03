@@ -9,11 +9,11 @@
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
 **Tags:** one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
 
-Here is a short description of the theme that might appear in the customizer.
+LearnDash, a Dynamic and Responsive theme built for WordPress, WooCommerce and LearnDash. Read the Full Desciption to learn more.
 
 ## Description
 
-This is the long description.  No limit, and you can use Markdown (as well as in the following sections).
+The LearnArmor is a Dynamic and Responsive WordPress theme. This theme featurs a Two Menus in the header, each displayed beautifully in a dynamically triggered fixed masthead that shrinks on page scroll. Design details include a corporate color scheme, beautiful typography and your choice of icon fonts (Dashicons or Fontawesome), a flexible layout that looks great on any device, big or small. Along with the default WordPress page templates, this theme includes a Full-Width Page and A No-title Full Width Page. The theme was built to integrate with LearnDash; therefor, this them features a specialized sidebar to hold LearnDash Course, Lesson and Topic related widgets. Speaking of widgets, this theme also adds a back to top widget to the Widget Menu. 
  
 
 ## Copyright
@@ -23,11 +23,11 @@ LearnArmor is distributed under the terms of the GNU GPL
 
 LearnArmor bundles the following third-party resources:
 
-normalize.css, Copyright 2012-2016 Nicolas Gallagher and Jonathan Neal
+1. normalize.css, Copyright 2012-2016 Nicolas Gallagher and Jonathan Neal
 **License:** MIT
 Source: https://necolas.github.io/normalize.css/
 
-Font Awesome icons, Copyright Dave Gandy
+1. Font Awesome icons, Copyright Dave Gandy
 **License:** SIL Open Font License, version 1.1.
 Source: http://fontawesome.io/
 
@@ -38,7 +38,7 @@ Source: http://fontawesome.io/
 1.0 - May 12 2015 
 * Initial release
 
-## Credits ==
+## Credits
 
 * Based on Underscores http://underscores.me/, (C) 2012-2017 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 * normalize.css http://necolas.github.io/normalize.css/, (C) 2012-2016 Nicolas Gallagher and Jonathan Neal, [MIT](http://opensource.org/licenses/MIT)
