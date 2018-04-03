@@ -13,7 +13,7 @@ LearnDash, a Dynamic and Responsive theme built for WordPress, WooCommerce and L
 
 ## Description
 
-The LearnArmor is a Dynamic and Responsive WordPress theme. This theme featurs a Two Menus in the header, each displayed beautifully in a dynamically triggered fixed masthead that shrinks on page scroll. Design details include a corporate color scheme, beautiful typography and your choice of icon fonts (Dashicons or Fontawesome), a flexible layout that looks great on any device, big or small. Along with the default WordPress page templates, this theme includes a Full-Width Page and A No-title Full Width Page. The theme was built to integrate with LearnDash; therefor, this them features a specialized sidebar to hold LearnDash Course, Lesson and Topic related widgets. Speaking of widgets, this theme also adds a back to top widget to the Widget Menu. 
+LearnArmor is a Dynamic and Responsive WordPress theme. This theme featurs a Two Menus in the header, each displayed beautifully in a dynamically triggered fixed masthead that shrinks on page scroll. Design details include a corporate color scheme, beautiful typography and your choice of icon fonts (Dashicons or Fontawesome), a flexible layout that looks great on any device, big or small. Along with the default WordPress page templates, this theme includes a Full-Width Page and A No-title Full Width Page. The theme was built to integrate with LearnDash; therefor, this them features a specialized sidebar to hold LearnDash Course, Lesson and Topic related widgets. Speaking of widgets, this theme also adds a back to top widget to the Widget Menu. 
  
 
 ## Copyright
