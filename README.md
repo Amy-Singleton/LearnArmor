@@ -1,6 +1,6 @@
 # LearnArmor 
 
-**Contributors:** (this should be a list of wordpress.org userid's)  
+**Contributors:** developer@psycharmor.com
 **Requires at least:** WordPress 4.4  
 **Tested up to:** WordPress 4.9.4  
 **Stable tag:** 1.2  
