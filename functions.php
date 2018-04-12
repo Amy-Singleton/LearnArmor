@@ -166,7 +166,12 @@ function learnarmor_scripts() {
 add_action( 'wp_enqueue_scripts', 'learnarmor_scripts' );
 
 // Register Custom Navigation Walker
-require_once get_template_directory() . '/wp-bootstrap-navwalker.php';
+//require_once get_template_directory() . '/wp-bootstrap-navwalker.php';
+
+function load_parent_walker(){
+	require_once get_template_directory() . '/wp-bootstrap-navwalker.php';
+}
+add_action( 'after_setup_theme', 'load_parent_walker' );
 /**
  * Implement the Custom Header feature.
  */
@@ -304,7 +309,9 @@ function learnarmor_custom_head() {
  
 <script>
 jQuery(document).ready(function($) {
-	$('.search-form').attr('tabindex', '0');
+	$('h1.site-title').remove();
+	$('p.site-description').remove();
+	$('#menu-item-search').attr('tabindex', '-1');
 	$('.menu-form-search').on('focus', function(){
 		$('#header-search').addClass('collapse in');
 		$('#header-search').css('display', 'block');
@@ -316,9 +323,6 @@ jQuery(document).ready(function($) {
 	$('.products').find('a').on('focus blur', function(){
 		$('this').parents('ul','li').attr('tabindex', '0');
 	});
-	$('h1, h2, h3, h4, h5, h6').attr('tabindex', '0');
-	$('p').attr('tabindex', '0');
-	$('section').attr('tabindex', '0');
 	if ($(window).width() <= 800) {
 			
 			$('#header-menus').removeClass('in');
@@ -327,20 +331,8 @@ jQuery(document).ready(function($) {
 		}
 		else{
 			$('#header-menus').removeClass('collapse');
-			$('#header-top-menu > ul > li').removeClass('col-sm-3');		    
+			$('#header-top-menu > ul > li').removeClass('col-sm-3');
 		}
-	$(window).on('resize', function(){
-		if ($(window).width() <= 800) {
-			
-			$('#header-menus').removeClass('in');
-			$('#header-menus').addClass('collapse');
-			//$('#menu-registration-and-login > ul > li').removeClass('col-sm-3');
-		}
-		else{
-			$('#header-menus').removeClass('collapse');
-			$('#header-top-menu > ul > li').removeClass('col-sm-3');	
-		}
-	});
 	$(window).scroll(function () {
 		if ($(window).scrollTop() > 75 && $(window).width() > 1024) { 
 			$('#masthead').addClass('shrink');
@@ -387,7 +379,6 @@ if ( is_plugin_active( 'sfwd-lms/sfwd_lms.php' ) ) {
 			remove_submenu_page( 'learndash-lms', 'edit.php?post_type=sfwd-certificates' );
 			remove_submenu_page( 'learndash-lms', 'edit.php?post_type=groups' );
 			remove_submenu_page( 'learndash-lms', 'edit.php?post_type=sfwd-essays' );
-			
 			if (class_exists( 'Jetpack' ) && current_user_can('group_leader') ) {
 			    remove_menu_page( 'jetpack' );                                                  //Jetpack Dashboard
 			    remove_menu_page( 'edit.php?post_type=jetpack-testimonial' );                   //Jetpack Testimonials
@@ -422,8 +413,6 @@ function link_post_image_html( $html, $post_id, $post_image_id ) {
   $html = '<a href="' . get_permalink( $post_id ) . '" title="' . esc_attr( get_post_field( 'post_title', $post_id ) ) . '">' . $html . '</a>';
   return $html;
 }
-
-
 /* Detect WPBakery plugin. For use in Admin area only. */
 if ( is_plugin_active( 'js_composer/js_composer.php' ) ) {
 	//plugin is activated
@@ -433,7 +422,6 @@ if ( is_plugin_active( 'js_composer/js_composer.php' ) ) {
 		vc_disable_frontend(); // this will disable frontend editor
 	}
 }
-
 /* Detect WPBakery plugin. For use in Frontend only. */
 if ( is_plugin_active( 'js_composer/js_composer.php' ) ) {
 	//plugin is activated
@@ -443,6 +431,4 @@ if ( is_plugin_active( 'js_composer/js_composer.php' ) ) {
 		remove_action( 'admin_bar_menu', array( vc_frontend_editor(), 'adminBarEditLink' ), 1000 );
 	}
 }
-
-
 ?>
