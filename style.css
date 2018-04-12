@@ -517,7 +517,6 @@ ul#menu-registration-and-login.nav.navbar-nav li.right a.wcmenucart-contents{
 	margin: 0;
 	height: 50px;
 }
-
 ul#menu-primary.nav.navbar-nav.shrink,
 ul#menu-registration-and-login.nav.navbar-nav {
 	margin-top: -.5em;
@@ -779,6 +778,7 @@ div#header-top-menu.shrink ul#menu-registration-and-login.nav.navbar-nav.shrink 
 	text-decoration: none;
 	top: 5px;
 	width: auto;
+	opacity: 1;
 	z-index: 100000; /* Above WP toolbar. */
 }
 a:focus {
@@ -1281,12 +1281,10 @@ object {
 /*--------------------------------------------------------------
 ## Footer
 --------------------------------------------------------------*/
-
 .site-footer {
 	clear: both;
 	background-color:#FFFFFF;
 }
-
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
@@ -1425,7 +1423,6 @@ object {
 .woocommerce-breadcrumb {
 	display: none;	
 }
-
 .columns-3 {
 	clear: both;
 }
@@ -1730,7 +1727,8 @@ body.single-groups #main-content {
 	#masthead.shrink {
 		height: 5.5em;
 	}
-	ul#menu-primary.nav.navbar-nav.shrink, ul#menu-registration-and-login.nav.navbar-nav {
+	ul#menu-primary.nav.navbar-nav.shrink,
+	ul#menu-registration-and-login.nav.navbar-nav {
 		margin-top: -1em;
 	}
 	/* Home Page */
@@ -1867,7 +1865,6 @@ body.single-groups #main-content {
 ##  Media Queries - Tablet 800px
 --------------------------------------------------------------*/
 @media screen and (max-width: 800px){
-	
 	/* Header */
 	#masthead {
 	    position: relative;
@@ -2060,13 +2057,12 @@ body.single-groups #main-content {
 ##  Media Queries - Tablet 732px
 --------------------------------------------------------------*/
 @media screen and (max-width: 732px){
-    .woocommerce table.shop_table td {
-	text-align: left;
-    }
-    .woocommerce table.shop_table td a {
-	padding-left: 15px;
-    }
-
+	.woocommerce table.shop_table td {
+	    text-align: left;
+	}
+	.woocommerce table.shop_table td a {
+	    padding-left: 15px;
+	}
 }
 /*--------------------------------------------------------------
 ##  Media Queries - Mobile 640px
@@ -2206,168 +2202,162 @@ body.single-groups #main-content {
 		margin-bottom: 2em;
 	}
 }
-
 /*--------------------------------------------------------------
 ##  Media Queries - Handheld Device 568px
 --------------------------------------------------------------*/
 @media screen and (max-width: 568px){
-    /* Products */
-    
-    img.attachment-shop_single {
-	width: 80%;
-	margin: 0 auto;
-	display: block;
-    }
-    section ul.products li.product .button {
-	    font-size: 16px;
-    }
-    section ul.products li.product .woocommerce-loop-product__title {
-	font-size: 22px;
-    }
-    input.qty {
-	width: 80%;
-	margin: 0 auto;
-	display: flex;
-    }
-    div ul.products li.product {
-	width: 100%;
-	margin: 30px;
-	display: block;
-	float: none;
-	height: auto;
-	padding-bottom: 1.5em;
-    }
-    .post-type-archive.post-type-archive-product a.button.product_type_simple.add_to_cart_button {
-	margin: 1em auto;
-    }
-    .post-type-archive-product a.added_to_cart.wc-forward {
-	width: 65%;
-	margin: 1em auto;
-	text-align: center;
-	float: none;
-	display: block;
-    }
-   
+	/* Products */
+	img.attachment-shop_single {
+	    width: 80%;
+	    margin: 0 auto;
+	    display: block;
+	}
+	section ul.products li.product .button {
+		font-size: 16px;
+	}
+	section ul.products li.product .woocommerce-loop-product__title {
+	    font-size: 22px;
+	}
+	input.qty {
+	    width: 80%;
+	    margin: 0 auto;
+	    display: flex;
+	}
+	div ul.products li.product {
+	    width: 100%;
+	    margin: 30px;
+	    display: block;
+	    float: none;
+	    height: auto;
+	    padding-bottom: 1.5em;
+	}
+	.post-type-archive.post-type-archive-product a.button.product_type_simple.add_to_cart_button {
+	    margin: 1em auto;
+	}
+	.post-type-archive-product a.added_to_cart.wc-forward {
+	    width: 65%;
+	    margin: 1em auto;
+	    text-align: center;
+	    float: none;
+	    display: block;
+	}
 }
 /*--------------------------------------------------------------
 ##  Media Queries - Mobile 480px
 --------------------------------------------------------------*/
 @media screen and (max-width: 480px){
-    /*Header */
-    .menu-primary-container {
-	float: left;
-	width: 100%;
-    }
-    #menu-primary {
-	float: none;
-	width: 80%;
-	margin: 0 auto;
-    }
-    .menu-form-search {
-	width: 80%;
-	float: right;
-    }
-    /* WooCommerce */
-    div ul.products li.product {
-	width: 100%;
-    }
-    /* Footer */
-    .back-to-top {
-	    right: 1.5em;
-	    bottom: 1em;
-    }
+	/*Header */
+	.menu-primary-container {
+	    float: left;
+	    width: 100%;
+	}
+	#menu-primary {
+	    float: none;
+	    width: 80%;
+	    margin: 0 auto;
+	}
+	.menu-form-search {
+	    width: 80%;
+	    float: right;
+	}
+	/* WooCommerce */
+	div ul.products li.product {
+	    width: 100%;
+	}
+	/* Footer */
+	.back-to-top {
+		right: 1.5em;
+		bottom: 1em;
+	}
 }
 /*--------------------------------------------------------------
 ##  Media Queries - Handheld Device 384px
 --------------------------------------------------------------*/
 @media screen and (max-width: 384px){
-    /*Header */
-    .navbar-brand {
-	    width: 75%;
-    }
-    .navbar-toggle {
-	    margin-top: 2.5em;
-    }
+	/*Header */
+	.navbar-brand {
+		width: 75%;
+	}
+	.navbar-toggle {
+		margin-top: 2.5em;
+	}
 }
 /*--------------------------------------------------------------
 ##  Media Queries - Handheld Device 375px
 --------------------------------------------------------------*/
 @media screen and (max-width: 375px){
-    /*Header */
-    .navbar-brand {
-	width: 75%;
-    }
-    .navbar-toggle {
-	margin-top: 2.5em;
-    }
-    /* Products */
-    body.archive,post-type-archive-product header.woocommerce-products-header h1.page-title {
-	font-size: 22px;
-    }
-    div.quantity {
+	/*Header */
+	.navbar-brand {
+	    width: 75%;
+	}
+	.navbar-toggle {
+	    margin-top: 2.5em;
+	}
+	/* Products */
+	body.archive,post-type-archive-product header.woocommerce-products-header h1.page-title {
+	    font-size: 22px;
+	}
+	div.quantity {
 	    width: 37%;
-    }
-    form.cart > button.single_add_to_cart_button {
+	}
+	form.cart > button.single_add_to_cart_button {
 	    width: 57%;
 	    font-size: 14px;
-    }
+	}
 }
 /*--------------------------------------------------------------
 ##  Media Queries - Mobile 360px
 --------------------------------------------------------------*/
 @media screen and (max-width: 360px){
-    /*Header */
-    .navbar-brand {
-	width: 75%;
-    }
-    .navbar-toggle {
-	margin-top: 2.5em;
-    }
-    #header-menus {
-	margin-top: 1.5em;
-	padding: 15px 10px;
-	width: 100%;
-    }
-    .menu-primary-container {
-	float: left;
-	width: 50%;
-    }
-    /* Cart Page */
-
-    /* Footer*/
-    .back-to-top {
-	right: 1em;
-    }
-    .footer-bottom-container {
-	font-size: 75%;
-	margin-bottom: 2em;
-    }
+	/*Header */
+	.navbar-brand {
+	    width: 75%;
+	}
+	.navbar-toggle {
+	    margin-top: 2.5em;
+	}
+	#header-menus {
+	    margin-top: 1.5em;
+	    padding: 15px 10px;
+	    width: 100%;
+	}
+	.menu-primary-container {
+		float: left;
+		width: 50%;
+	}
+	/* Footer*/
+	.back-to-top {
+		right: 1em;
+	}
+	.footer-bottom-container {
+		font-size: 75%;
+		margin-bottom: 2em;
+	}
 }
-
 /*--------------------------------------------------------------
 ##  Media Queries - Mobile 320px
 --------------------------------------------------------------*/
 @media screen and (max-width: 320px){
-    .navbar-brand {
-	width: 55%;
-    }
-    .navbar-toggle {
-	margin-top: 1.5em;
-    }
-    #menu-item-search {
-	float: left;
-	margin: .85em .25em;
-	width: 10%;
-    }
-    ul.products li.product .woocommerce-loop-product__title {
-	height: auto;
-    }
-    section ul.products li.product .button {
-	font-size: 12px;
-    }
-    /* Footer */
-    .back-to-top {
-	right: .75em;
-	bottom: 0;
-    }
+	.navbar-brand {
+	    width: 55%;
+	}
+	.navbar-toggle {
+	    margin-top: 1.5em;
+	}
+	#menu-item-search {
+	    float: left;
+	    margin: .85em .25em;
+	    width: 10%;
+	}
+	ul.products li.product .woocommerce-loop-product__title {
+	    height: auto;
+	}
+	section ul.products li.product .button {
+	    font-size: 12px;
+	}
+	/* Footer */
+	.back-to-top {
+	    right: .75em;
+	    bottom: 0;
+	}
 }
